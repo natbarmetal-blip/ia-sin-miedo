@@ -298,6 +298,75 @@
   .tip-text { font-size: 13px; color: #cbd5e1; line-height: 1.5; }
   .tip-text strong { color: var(--white); display: block; margin-bottom: 2px; font-size: 14px; }
 
+  /* PROMO BANNER */
+  .promo-banner {
+    background: linear-gradient(135deg, rgba(255,107,107,0.1), rgba(255,179,71,0.08));
+    border: 1px solid rgba(255,107,107,0.25);
+    border-radius: 20px; padding: 40px 36px;
+    margin-top: 48px;
+    display: flex; align-items: center; gap: 32px;
+    transition: all 0.3s ease;
+  }
+  .promo-banner:hover { border-color: rgba(255,107,107,0.4); transform: translateY(-3px); }
+  .promo-emoji { font-size: 48px; flex-shrink: 0; }
+  .promo-content { flex: 1; }
+  .promo-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px; margin-bottom: 8px;
+  }
+  .promo-content p { color: var(--muted); font-size: 15px; margin-bottom: 16px; line-height: 1.6; }
+  .promo-cta {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: linear-gradient(135deg, var(--accent), #ff8c42);
+    color: #fff; border: none; border-radius: 12px;
+    padding: 14px 28px; font-size: 15px; font-weight: 700;
+    cursor: pointer; text-decoration: none;
+    transition: all 0.25s ease;
+    box-shadow: 0 6px 24px rgba(255,107,107,0.3);
+    font-family: 'Lato', sans-serif;
+  }
+  .promo-cta:hover { transform: translateY(-2px); box-shadow: 0 10px 32px rgba(255,107,107,0.4); }
+
+  .email-capture {
+    background: var(--dark2);
+    border: 1px solid var(--border);
+    border-radius: 20px; padding: 36px 32px;
+    margin-top: 32px;
+    text-align: center;
+  }
+  .email-capture h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px; margin-bottom: 8px;
+  }
+  .email-capture p { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
+  .email-row {
+    display: flex; gap: 10px;
+    max-width: 440px; margin: 0 auto;
+  }
+  .email-row input {
+    flex: 1; padding: 14px 16px;
+    background: rgba(255,255,255,0.06);
+    border: 1.5px solid rgba(255,255,255,0.1);
+    border-radius: 12px; color: var(--white);
+    font-size: 15px; font-family: 'Lato', sans-serif;
+    outline: none; transition: border-color 0.25s;
+  }
+  .email-row input:focus { border-color: var(--teal); }
+  .email-row input::placeholder { color: #3a4256; }
+  .email-row button {
+    background: linear-gradient(135deg, var(--teal), #38b2ac);
+    color: #0a0a12; border: none; border-radius: 12px;
+    padding: 14px 24px; font-size: 14px; font-weight: 700;
+    cursor: pointer; font-family: 'Lato', sans-serif;
+    transition: all 0.25s; white-space: nowrap;
+  }
+  .email-row button:hover { transform: translateY(-2px); }
+
+  @media (max-width: 600px) {
+    .promo-banner { flex-direction: column; text-align: center; gap: 16px; padding: 28px 24px; }
+    .email-row { flex-direction: column; }
+  }
+
   /* FOOTER */
   footer {
     background: #070710; padding: 28px 24px;
@@ -456,6 +525,33 @@
     </div>
   </div>
 
+  <!-- PROMO BANNER -->
+  <div class="promo-banner">
+    <div class="promo-emoji">📄</div>
+    <div class="promo-content">
+      <h3>¿Te gustó esta herramienta?</h3>
+      <p>Descubre cómo usar ChatGPT, Canva AI, CapCut y más en nuestra guía práctica — en español, sin tecnicismos, lista para usar hoy.</p>
+      <a href="https://go.hotmart.com/V105443698D" target="_blank" class="promo-cta">
+        📥 Quiero la guía por $9.99 →
+      </a>
+    </div>
+  </div>
+
+  <!-- EMAIL CAPTURE -->
+  <div class="email-capture">
+    <h3>✉️ Recibe tips semanales de contenido viral</h3>
+    <p>Ideas para tus redes, trucos de IA, y herramientas nuevas — gratis, en español, sin spam.</p>
+    <form name="tips-carousel" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleTipsForm(event)">
+      <input type="hidden" name="form-name" value="tips-carousel">
+      <p style="display:none;"><input name="bot-field"></p>
+      <div class="email-row">
+        <input type="email" name="email" placeholder="Tu email" required>
+        <button type="submit">Suscribirme 🚀</button>
+      </div>
+    </form>
+    <p style="font-size:12px;color:#3a4256;margin-top:10px;">🔒 Sin spam, nunca. Te puedes dar de baja cuando quieras.</p>
+  </div>
+
 </div>
 
 <!-- FOOTER -->
@@ -465,7 +561,7 @@
     <a href="index.html">Inicio</a> &nbsp;·&nbsp;
     <a href="index.html#pdf">Comprar guía</a>
   </p>
-  <p>© 2025 IA Sin Miedo · Herramientas de IA para todos</p>
+  <p>© 2026 IA Sin Miedo · Herramientas de IA para todos</p>
 </footer>
 
 <script>
@@ -775,6 +871,22 @@ async function downloadAll() {
   currentSlide = saved;
   renderDots();
   renderSlide();
+}
+
+// Email tips form handler
+function handleTipsForm(event) {
+  event.preventDefault();
+  const form = event.target;
+  const data = new FormData(form);
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(data).toString()
+  }).then(() => {
+    form.innerHTML = '<p style="color:#4ECDC4;font-weight:700;font-size:16px;padding:10px 0;">🎉 ¡Listo! Revisa tu email para los primeros tips.</p>';
+  }).catch(() => {
+    form.innerHTML = '<p style="color:#f8f6f2;font-weight:700;font-size:16px;padding:10px 0;">¡Gracias! Te mantendremos informado.</p>';
+  });
 }
 
 // Keyboard navigation

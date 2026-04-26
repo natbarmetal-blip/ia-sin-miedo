@@ -333,6 +333,171 @@
     display: flex; align-items: center; justify-content: center; gap: 6px;
   }
 
+  /* WAITLIST / PRE-VENTA */
+  .waitlist { background: var(--dark); padding: 100px 24px; }
+  .waitlist-card {
+    background: linear-gradient(135deg, rgba(167,139,250,0.08), rgba(255,107,107,0.06));
+    border: 1px solid rgba(167,139,250,0.25);
+    border-radius: 28px; padding: 56px 48px;
+    text-align: center; max-width: 720px; margin: 0 auto;
+    position: relative; overflow: hidden;
+  }
+  .waitlist-card::before {
+    content: ''; position: absolute; top: -60%; right: -30%;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(167,139,250,0.1), transparent 70%);
+    pointer-events: none;
+  }
+  .waitlist-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(167,139,250,0.15);
+    border: 1px solid rgba(167,139,250,0.35);
+    border-radius: 50px; padding: 8px 22px;
+    font-size: 13px; color: #A78BFA; font-weight: 700;
+    letter-spacing: 1px; text-transform: uppercase;
+    margin-bottom: 24px;
+    animation: pulse 2.5s ease-in-out infinite;
+  }
+  .waitlist-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 900; line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  .waitlist-card h2 em {
+    font-style: normal;
+    background: linear-gradient(135deg, #A78BFA, var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .waitlist-desc {
+    color: var(--muted); font-size: 17px;
+    max-width: 520px; margin: 0 auto 36px;
+    line-height: 1.7;
+  }
+
+  .modules-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 14px; margin-bottom: 36px;
+    max-width: 480px; margin-left: auto; margin-right: auto;
+    margin-bottom: 36px;
+  }
+  .module-item {
+    display: flex; align-items: center; gap: 12px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px; padding: 16px;
+    transition: all 0.3s ease;
+    text-align: left;
+  }
+  .module-item:hover {
+    border-color: rgba(167,139,250,0.35);
+    transform: translateY(-3px);
+    background: rgba(255,255,255,0.06);
+  }
+  .module-icon { font-size: 28px; flex-shrink: 0; }
+  .module-name { font-size: 15px; font-weight: 700; color: var(--white); }
+  .module-detail { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+  .waitlist-stats {
+    display: flex; justify-content: center; gap: 32px;
+    margin-bottom: 32px;
+  }
+  .waitlist-stat { text-align: center; }
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px; font-weight: 900;
+    color: #A78BFA; line-height: 1;
+  }
+  .stat-label {
+    font-size: 13px; color: var(--muted);
+    margin-top: 4px; font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .countdown-box {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px; padding: 20px 28px;
+    margin-bottom: 28px;
+    display: flex; align-items: center;
+    justify-content: center; gap: 24px;
+    max-width: 400px; margin-left: auto; margin-right: auto;
+    margin-bottom: 28px;
+  }
+  .countdown-label {
+    font-size: 14px; color: var(--accent2);
+    font-weight: 700;
+  }
+  .countdown-timer {
+    display: flex; gap: 16px;
+  }
+  .countdown-unit { text-align: center; }
+  .countdown-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px; font-weight: 900;
+    color: var(--white); line-height: 1;
+    display: block;
+  }
+  .countdown-txt {
+    font-size: 11px; color: var(--muted);
+    text-transform: uppercase; letter-spacing: 1px;
+  }
+
+  .price-preview {
+    display: flex; align-items: center;
+    justify-content: center; gap: 16px;
+    margin-bottom: 32px;
+  }
+  .price-preview .original {
+    font-size: 24px; color: var(--muted);
+    text-decoration: line-through;
+    font-weight: 300;
+  }
+  .price-preview .special {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px; font-weight: 900;
+    color: #A78BFA;
+  }
+  .price-preview .savings {
+    background: rgba(78,205,196,0.15);
+    border: 1px solid rgba(78,205,196,0.3);
+    border-radius: 50px; padding: 6px 16px;
+    font-size: 13px; color: var(--teal);
+    font-weight: 700;
+  }
+
+  .waitlist-form {
+    max-width: 420px; margin: 0 auto;
+  }
+  .waitlist-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #A78BFA, #8b5cf6);
+    color: #fff; border: none; border-radius: 12px;
+    padding: 16px; font-size: 17px; font-weight: 700;
+    cursor: pointer; font-family: 'Lato', sans-serif;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 30px rgba(167,139,250,0.35);
+  }
+  .waitlist-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 40px rgba(167,139,250,0.45);
+  }
+  .waitlist-note {
+    font-size: 13px; color: var(--muted);
+    text-align: center; margin-top: 12px;
+  }
+  .waitlist-note strong { color: #A78BFA; }
+
+  @media (max-width: 700px) {
+    .waitlist-card { padding: 36px 24px; }
+    .modules-grid { grid-template-columns: 1fr; }
+    .waitlist-stats { gap: 20px; }
+    .countdown-box { flex-direction: column; gap: 12px; }
+    .price-preview { flex-direction: column; gap: 8px; }
+  }
+
   /* GARANTÍA */
   .garantia { background: var(--dark); }
   .garantia-box {
@@ -425,7 +590,7 @@
 <!-- NAV -->
 <nav>
   <div class="logo">IA <span>Sin</span> Miedo</div>
-  <a href="carousel.html" style="color:#8892a4;font-size:14px;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#f8f6f2'" onmouseout="this.style.color='#8892a4'">🎨 Crear Carrusel</a>
+  <a href="carousel.html" style="background:rgba(78,205,196,0.12);border:1px solid rgba(78,205,196,0.3);color:#4ECDC4;font-size:13px;font-weight:700;text-decoration:none;border-radius:50px;padding:8px 18px;transition:all 0.25s;" onmouseover="this.style.background='rgba(78,205,196,0.2)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='rgba(78,205,196,0.12)';this.style.transform='translateY(0)'">🎨 Crear Carrusel</a>
   <a href="#agente" class="nav-cta">Probar gratis →</a>
 </nav>
 
@@ -590,12 +755,106 @@
 
       <div class="price-box">
         <p class="price-old">Valor real: $29</p>
-        <p class="price-new">$9</p>
+        <p class="price-new">$9.99</p>
         <p class="price-note">Pago único · Acceso de por vida · PDF descargable</p>
         <a href="https://go.hotmart.com/V105443698D" target="_blank" class="price-btn">
-          Quiero mi guía por $9 →
+          Quiero mi guía por $9.99 →
         </a>
         <p class="price-guarantee">🔒 Garantía de 30 días incluida</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRE-VENTA / LISTA DE ESPERA CURSO -->
+<section class="waitlist" id="curso">
+  <div class="container">
+    <div class="waitlist-card">
+      <div class="waitlist-badge">🚀 Próximo lanzamiento</div>
+      <h2>El curso completo<br>viene <em>en camino</em></h2>
+      <p class="waitlist-desc">4 módulos, 18 videos paso a paso, desde cero hasta crear contenido profesional con IA. Diseñado para personas que nunca han usado inteligencia artificial.</p>
+
+      <div class="modules-grid">
+        <div class="module-item">
+          <span class="module-icon">💬</span>
+          <div>
+            <div class="module-name">ChatGPT</div>
+            <div class="module-detail">Escribe, pregunta, crea</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <span class="module-icon">🎨</span>
+          <div>
+            <div class="module-name">Canva AI</div>
+            <div class="module-detail">Diseños profesionales</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <span class="module-icon">🎬</span>
+          <div>
+            <div class="module-name">CapCut AI</div>
+            <div class="module-detail">Videos sin experiencia</div>
+          </div>
+        </div>
+        <div class="module-item">
+          <span class="module-icon">🎵</span>
+          <div>
+            <div class="module-name">Suno AI</div>
+            <div class="module-detail">Crea música con IA</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="waitlist-stats">
+        <div class="waitlist-stat">
+          <div class="stat-number">18</div>
+          <div class="stat-label">Videos</div>
+        </div>
+        <div class="waitlist-stat">
+          <div class="stat-number">4</div>
+          <div class="stat-label">Guías PDF</div>
+        </div>
+        <div class="waitlist-stat">
+          <div class="stat-number">∞</div>
+          <div class="stat-label">Acceso de por vida</div>
+        </div>
+      </div>
+
+      <div class="countdown-box">
+        <span class="countdown-label">⏰ Lanzamiento en:</span>
+        <div class="countdown-timer" id="courseCountdown">
+          <div class="countdown-unit">
+            <span class="countdown-num" id="cdDays">14</span>
+            <span class="countdown-txt">Días</span>
+          </div>
+          <div class="countdown-unit">
+            <span class="countdown-num" id="cdHours">00</span>
+            <span class="countdown-txt">Horas</span>
+          </div>
+          <div class="countdown-unit">
+            <span class="countdown-num" id="cdMins">00</span>
+            <span class="countdown-txt">Min</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="price-preview">
+        <span class="original">$97</span>
+        <span class="special">$67</span>
+        <span class="savings">Ahorras $30</span>
+      </div>
+
+      <div class="waitlist-form">
+        <form name="waitlist-curso" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleWaitlist(event)">
+          <input type="hidden" name="form-name" value="waitlist-curso">
+          <p style="display:none;"><input name="bot-field"></p>
+          <div class="form-row">
+            <input type="text" name="nombre" class="form-input" placeholder="Tu nombre">
+            <input type="email" name="email" class="form-input" placeholder="Tu email" required>
+            <button type="submit" class="waitlist-btn">🔔 Avisarme</button>
+          </div>
+        </form>
+        <p class="waitlist-note">🔒 Te avisamos cuando lancemos. <strong>Precio especial solo para la lista de espera.</strong></p>
       </div>
     </div>
   </div>
@@ -664,11 +923,19 @@
     <div class="urgency">⏰ El mejor momento para empezar es hoy</div>
     <h2>El mundo no va a esperar.<br><em style="font-style:normal;color:var(--accent)">Pero tú tampoco tienes que quedarte atrás.</em></h2>
     <p>Empieza ahora con el asistente gratis — sin riesgo, sin tecnicismos, sin miedo.</p>
-    <a href="#agente" class="hero-cta" style="display:inline-flex;text-decoration:none">
-      Quiero probar gratis ahora →
-    </a>
-    <p style="margin-top:24px;font-size:14px;color:var(--muted)">
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:20px;">
+      <a href="#agente" class="hero-cta" style="display:inline-flex;text-decoration:none;font-size:18px;padding:18px 36px;">
+        🤖 Probar asistente gratis
+      </a>
+      <a href="#pdf" style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.08);border:1.5px solid rgba(255,255,255,0.15);color:#fff;border-radius:16px;padding:18px 36px;font-size:18px;font-weight:700;text-decoration:none;transition:all 0.3s ease;" onmouseover="this.style.borderColor='rgba(255,107,107,0.4)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.15)';this.style.transform='translateY(0)'">
+        📄 Comprar guía $9.99
+      </a>
+    </div>
+    <p style="margin-top:12px;font-size:14px;color:var(--muted)">
       ✓ Sin tarjeta de crédito &nbsp;·&nbsp; ✓ Sin registro complicado &nbsp;·&nbsp; ✓ Resultado en 2 minutos
+    </p>
+    <p style="margin-top:8px;font-size:13px;color:#A78BFA;">
+      🚀 ¿Quieres el curso completo? <a href="#curso" style="color:#A78BFA;text-decoration:underline;font-weight:700;">Únete a la lista de espera →</a>
     </p>
   </div>
 </section>
@@ -679,9 +946,10 @@
     <strong style="color:#4a5568">IA Sin Miedo</strong> &nbsp;·&nbsp;
     <a href="#">Privacidad</a> &nbsp;·&nbsp;
     <a href="#">Contacto</a> &nbsp;·&nbsp;
-    <a href="#pdf">Comprar guía</a>
+    <a href="#pdf">Comprar guía</a> &nbsp;·&nbsp;
+    <a href="#curso">Curso próximamente</a>
   </p>
-  <p>© 2025 IA Sin Miedo · Aprende inteligencia artificial sin complicaciones</p>
+  <p>© 2026 IA Sin Miedo · Aprende inteligencia artificial sin complicaciones</p>
 </footer>
 
 <!-- MODAL AGENTE COMPLETO -->
@@ -903,6 +1171,62 @@ function toggleFaq(el) {
   if (!isOpen) item.classList.add('open');
 }
 
+// Waitlist form handler
+function handleWaitlist(event) {
+  event.preventDefault();
+  const form = event.target;
+  const data = new FormData(form);
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(data).toString()
+  }).then(() => {
+    form.innerHTML = '<div style="text-align:center;padding:20px;"><p style="font-size:28px;margin-bottom:10px;">🎉</p><p style="font-size:20px;font-weight:700;color:#f8f6f2;margin-bottom:8px;">¡Estás en la lista!</p><p style="color:#8892a4;font-size:15px;">Te avisaremos cuando lancemos. Prepárate para aprender IA sin miedo.</p></div>';
+  }).catch(() => {
+    form.innerHTML = '<div style="text-align:center;padding:20px;"><p style="font-size:20px;font-weight:700;color:#f8f6f2;">¡Gracias! Te mantendremos informado.</p></div>';
+  });
+}
+
+// Countdown timer for course launch (2 weeks from now)
+function startCountdown() {
+  const launchDate = new Date();
+  launchDate.setDate(launchDate.getDate() + 14);
+  // Store launch date in localStorage so it stays consistent
+  const stored = localStorage.getItem('iasinmiedo_launch');
+  let target;
+  if (stored) {
+    target = new Date(stored);
+    if (target < new Date()) {
+      // If past, reset
+      target = launchDate;
+      localStorage.setItem('iasinmiedo_launch', launchDate.toISOString());
+    }
+  } else {
+    target = launchDate;
+    localStorage.setItem('iasinmiedo_launch', launchDate.toISOString());
+  }
+
+  function update() {
+    const now = new Date();
+    const diff = target - now;
+    if (diff <= 0) {
+      document.getElementById('cdDays').textContent = '00';
+      document.getElementById('cdHours').textContent = '00';
+      document.getElementById('cdMins').textContent = '00';
+      return;
+    }
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    document.getElementById('cdDays').textContent = String(days).padStart(2, '0');
+    document.getElementById('cdHours').textContent = String(hours).padStart(2, '0');
+    document.getElementById('cdMins').textContent = String(mins).padStart(2, '0');
+  }
+  update();
+  setInterval(update, 60000);
+}
+startCountdown();
+
 // Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
@@ -924,7 +1248,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.15 });
 
-document.querySelectorAll('.pain-card, .testi-card, .faq-item, .agent-card, .garantia-box').forEach(el => {
+document.querySelectorAll('.pain-card, .testi-card, .faq-item, .agent-card, .garantia-box, .waitlist-card, .module-item').forEach(el => {
   el.style.opacity = '0';
   observer.observe(el);
 });
