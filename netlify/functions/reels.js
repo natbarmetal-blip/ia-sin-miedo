@@ -59,6 +59,12 @@ exports.handler = async (event) => {
 
     const systemPrompt = `Eres un experto en contenido viral para Reels de Instagram, TikTok y Facebook. Tu especialidad es crear guiones de video corto que generan millones de vistas para la marca "IA Sin Miedo", que enseña a personas de 45-75 años a usar inteligencia artificial sin miedo.
 
+HERRAMIENTAS PERMITIDAS (usa SOLO estas 4, nunca otras):
+- ChatGPT
+- Canva AI
+- CapCut
+- Suno
+
 REGLAS ESTRICTAS:
 1. Siempre en español
 2. Lenguaje ultra simple, SIN tecnicismos
