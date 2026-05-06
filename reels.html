@@ -6,6 +6,7 @@
 <title>Generador de Reels Virales — IA Sin Miedo</title>
 <meta name="description" content="Crea Reels virales para Instagram, TikTok y Facebook con inteligencia artificial. Gratis, en español, sin complicaciones.">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <style>
   :root {
     --dark: #0a0a12;
@@ -667,8 +668,8 @@
           <button class="download-btn download-images-btn" onclick="downloadCurrentScene()">
             🖼️ Descargar esta escena
           </button>
-          <button class="download-btn download-images-btn" onclick="downloadAllScenes()">
-            📥 Todas las escenas (imágenes)
+          <button class="download-btn download-images-btn" onclick="downloadAllScenesZip()" id="downloadZipBtn">
+            📦 Descargar para Instagram (ZIP)
           </button>
         </div>
 
@@ -1454,32 +1455,55 @@ function downloadCurrentScene() {
 
 async function downloadAllScenes() {
   if (scenes.length === 0) return;
+  await downloadAllScenesZip();
+}
+
+async function downloadAllScenesZip() {
+  if (scenes.length === 0) return;
+
+  const btn = document.getElementById('downloadZipBtn');
+  btn.disabled = true;
+  btn.textContent = '⏳ Preparando imágenes...';
 
   const canvas = document.getElementById('reelCanvas');
   const ctx = canvas.getContext('2d');
   const W = 1080, H = 1920;
   const saved = currentScene;
+  const zip = new JSZip();
+  const folder = zip.folder('reels-instagram');
 
   for (let i = 0; i < scenes.length; i++) {
+    btn.textContent = `⏳ Procesando escena ${i + 1} de ${scenes.length}...`;
     canvas.width = W;
     canvas.height = H;
     drawSceneFrame(ctx, W, H, i, 1.0, 1.0, 0);
+    await new Promise(resolve => setTimeout(resolve, 150));
 
-    await new Promise(resolve => setTimeout(resolve, 100));
-
-    const link = document.createElement('a');
-    link.download = `reel-escena-${i + 1}.png`;
-    link.href = canvas.toDataURL('image/png');
-    link.click();
-
-    await new Promise(resolve => setTimeout(resolve, 300));
+    const dataUrl = canvas.toDataURL('image/png');
+    const base64 = dataUrl.replace(/^data:image\/png;base64,/, '');
+    const label = scenes[i].type === 'hook' ? '01-hook' :
+                  scenes[i].type === 'cta'  ? `0${i+1}-cta` :
+                  `0${i+1}-escena`;
+    folder.file(`${label}.png`, base64, { base64: true });
   }
 
-  // Restore current scene
+  // Restore
   currentScene = saved;
   renderStaticScene();
   renderDots();
   renderScript();
+
+  btn.textContent = '⏳ Generando ZIP...';
+  const blob = await zip.generateAsync({ type: 'blob' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.download = 'reels-instagram.zip';
+  link.href = url;
+  link.click();
+  URL.revokeObjectURL(url);
+
+  btn.disabled = false;
+  btn.textContent = '📦 Descargar para Instagram (ZIP)';
 }
 
 // ══════════════════════════════════════════════════════
