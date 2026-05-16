@@ -1,0 +1,250 @@
+GUIÓN — VIDEO YOUTUBE
+"Cómo usar la Inteligencia Artificial si tenés más de 45 años y nunca la usaste"
+La IA Sin Miedo | @natalio.iasinmiedo
+Duración estimada: 8-12 minutos
+==========================================================
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+INTRO (0:00 - 0:45)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Mirás a cámara, tono directo y cálido]
+
+"Si tenés más de 45 años, nunca usaste inteligencia artificial,
+y cada vez que escuchás hablar de eso sentís que no es para vos...
+este video es exactamente para vos.
+
+No voy a hablar de tecnología complicada.
+No voy a usar palabras raras.
+Te voy a mostrar, paso a paso, cómo usar una herramienta gratuita
+que ya hoy te puede ahorrar horas de trabajo.
+
+Me llamo Natalio. Yo tampoco soy programador.
+Soy herrero, dueño de mi propio taller.
+Y te voy a mostrar cómo uso la inteligencia artificial
+para trabajar mejor, escribir mejor, y ganar tiempo.
+
+Quedáte hasta el final porque al final te muestro
+el truco más poderoso. El que nadie te enseña."
+
+[TEXTO EN PANTALLA: "Guía de IA para mayores de 45 años"]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PARTE 1 — ¿Qué es la IA? (0:45 - 2:00)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Tono tranquilo, como explicándole a un amigo]
+
+"Primero lo más importante: ¿qué es la inteligencia artificial?
+
+Olvidate de las películas de robots.
+Olvidate de las computadoras que conquistan el mundo.
+
+La inteligencia artificial, en la práctica,
+es como tener un empleado muy capaz
+que sabe de todo, trabaja los 7 días,
+no se cansa, no se queja,
+y te responde en segundos.
+
+Le podés pedir que te escriba un mensaje,
+que te ayude a preparar una reunión,
+que te explique algo que no entendés,
+o que te haga un presupuesto.
+
+Y lo hace bien. En segundos.
+
+La herramienta que vamos a usar se llama ChatGPT.
+Es gratuita. La podés usar desde tu teléfono o tu computadora.
+Y en 5 minutos vas a ver lo que puede hacer."
+
+[TEXTO EN PANTALLA: "ChatGPT — gratis — en tu celular o computadora"]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PARTE 2 — Cómo entrar a ChatGPT (2:00 - 3:00)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Mostrás la pantalla — vas a chatgpt.com]
+
+"Entramos a chatgpt.com
+Creás una cuenta gratuita con tu email.
+Ya está. Eso es todo lo que necesitás hacer.
+
+Ahora ves esta pantalla en blanco con un cuadro para escribir.
+Acá es donde le hablás. En español, como hablarías con una persona.
+No hay que saber inglés. No hay que saber nada especial.
+
+Solo escribís lo que necesitás, como si le mandaras un mensaje
+a alguien que sabe de todo."
+
+[TEXTO EN PANTALLA: "chatgpt.com → crear cuenta gratis → listo"]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PARTE 3 — Ejemplo 1: El mensaje que no sabés cómo escribir (3:00 - 5:00)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Mostrás ChatGPT en pantalla y escribís el prompt]
+
+"¿Cuántas veces te pasó esto?
+Tenés que escribirle a un cliente,
+pero no sabés bien cómo decirlo sin sonar mal.
+O querés mandar un presupuesto
+y no sabés cómo empezar.
+
+Mirá lo que pasa cuando le pedís ayuda a ChatGPT."
+
+[ESCRIBÍS EN CHATGPT — mostrás la pantalla:]
+
+Necesito escribirle a un cliente que me pidió un presupuesto hace
+3 días y no me respondió. No quiero parecer molesto pero quiero
+saber si le interesa. ¿Me escribís el mensaje para WhatsApp?
+Corto, amable y directo.
+
+[Esperás la respuesta — la leés en voz alta]
+
+"¿Lo ves? En 10 segundos.
+Un mensaje profesional, amable, que no molesta.
+Algo que a mí me llevaría 20 minutos pensar cómo escribirlo.
+
+Y lo podés usar tal cual o cambiarlo como quieras.
+Porque vos seguís siendo el que decide.
+La IA solo te ayuda."
+
+[TEXTO EN PANTALLA: "20 minutos de pensar → 10 segundos con IA"]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PARTE 4 — Ejemplo 2: Prepararse para una reunión (5:00 - 6:30)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Seguís en pantalla — nuevo mensaje en ChatGPT]
+
+"Otro ejemplo. ¿Alguna vez fuiste a una reunión con un cliente nuevo
+y en el momento no supiste qué preguntar?
+O te fuiste a casa pensando: 'tendría que haberle preguntado eso'.
+
+Mirá esto:"
+
+[ESCRIBÍS EN CHATGPT:]
+
+Mañana tengo una reunión con un cliente nuevo que quiere comprar
+maquinaria para su taller. Nunca lo conocí. ¿Qué preguntas le hago
+para entender bien lo que necesita y no quedarme sin saber qué decir?
+
+[Leés la respuesta]
+
+"Te da la lista completa de preguntas.
+Antes de la reunión, la leés una vez.
+Y llegás preparado, seguro, como un profesional.
+
+Eso es lo que hace la IA.
+No te reemplaza. Te prepara."
+
+[TEXTO EN PANTALLA: "La IA no te reemplaza. Te prepara."]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PARTE 5 — El truco más poderoso (6:30 - 9:00)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Bajás la voz un poco — como contando un secreto]
+
+"Ahora te voy a mostrar el truco que cambia todo.
+El que nadie te enseña.
+
+La mayoría de la gente usa ChatGPT
+como si fuera una búsqueda en Google.
+Pregunta, lee, cierra.
+
+Pero hay una forma mucho más poderosa.
+Se llama el asistente personalizado.
+Y funciona así:"
+
+[ESCRIBÍS EN CHATGPT:]
+
+De ahora en adelante sos mi asistente personal. Me llamo Natalio,
+tengo 55 años, soy dueño de un taller de herrería en Argentina.
+Mis clientes son principalmente empresas constructoras y particulares
+que quieren trabajo de calidad. Mi mayor problema es que pierdo tiempo
+escribiendo mensajes y presupuestos. Cada vez que te pida algo,
+acordate de esto y ayudame como si me conocieras de hace años.
+¿Entendiste?
+
+[Mostrás la respuesta de ChatGPT]
+
+"¿Lo ves? Ahora te conoce.
+Ahora sabé quién sos, a qué te dedicás, cómo trabajás.
+
+Y a partir de acá, todo lo que le pedís
+ya viene ajustado a tu trabajo y a tu forma de hablar.
+
+Mirá la diferencia:"
+
+[ESCRIBÍS ESTE PROMPT RÁPIDO:]
+
+Escribime un presupuesto para una reja de ventana de 1.20 x 90 cm,
+hierro cuadrado, pintura anticorrosión. El cliente es una familia
+en zona residencial. Precio: $85.000 pesos. Tono formal pero amable.
+
+[Mostrás el resultado]
+
+"En 10 segundos. Un presupuesto completo, profesional.
+Listo para copiar y mandar por WhatsApp o email.
+
+Eso es tener la IA como tu mejor empleado."
+
+[TEXTO EN PANTALLA: "Presentáte una vez → la IA te recuerda siempre"]
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CIERRE (9:00 - 10:00)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Mirás a cámara — tono cálido y directo]
+
+"Si llegaste hasta acá, ya sabés más de inteligencia artificial
+que el 90% de las personas de tu edad.
+
+No hace falta ser joven para usar esto.
+No hace falta saber de tecnología.
+Solo hace falta animarse a escribir la primera vez.
+
+Empezás hoy. Entrás a chatgpt.com,
+te presentás como te enseñé,
+y le pedís algo que necesites ahora mismo.
+
+Si querés aprender más, seguime acá en el canal.
+Cada semana subo un video nuevo, simple, sin tecnicismos,
+para que puedas usar la IA en tu trabajo y tu vida diaria.
+
+Y si querés empezar con todo de una vez,
+tengo una guía completa en el link de mi perfil.
+
+Gracias por verme. Nos vemos en el próximo video."
+
+[TEXTO EN PANTALLA FINAL:
+"Seguime: @natalio.iasinmiedo"
+"Guía completa → link en el perfil"]
+
+
+==========================================================
+NOTAS PARA LA GRABACIÓN
+==========================================================
+
+TONO: Cálido y paciente. Como explicándole a un familiar querido.
+      Nunca apurado. Hacé pausas para que la gente pueda leer.
+
+RITMO: Hablar despacio en las partes técnicas.
+       Más dinámico en la intro y el cierre.
+
+PANTALLA: Grabá la pantalla de ChatGPT cuando escribís los prompts.
+          Mostrá cómo llega la respuesta en tiempo real.
+
+EDICIÓN (CapCut): Poné los textos de pantalla entre corchetes.
+                  Música de fondo suave y tranquila.
+                  Sin efectos exagerados — este público los detesta.
+
+==========================================================

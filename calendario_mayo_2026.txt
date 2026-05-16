@@ -1,0 +1,100 @@
+CALENDARIO DE PUBLICACIONES — MAYO 2026
+La IA Sin Miedo | @natalio.iasinmiedo
+Objetivo: pasar de 242 a 340+ seguidores
+Meta: publicar 3 veces por semana
+==========================================================
+FORMATO: R = Reel | C = Carrusel | F = Foto con texto
+MEJOR HORARIO: 19:00 - 21:00 (hora Argentina)
+==========================================================
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SEMANA 1 — 12 al 18 de mayo
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LUNES 12 — [R] REEL DE PRESENTACIÓN
+Hook: "Tengo 55 años, soy herrero, y uso inteligencia artificial todos los días"
+Tema: Tu historia personal — quién sos, por qué empezaste con IA
+Por qué funciona: la gente mayor de 45 se identifica con vos
+Contenido ya listo: podés usar el guión grabacion_pantalla.txt
+
+MIÉRCOLES 14 — [C] CARRUSEL EDUCATIVO
+Hook: "3 cosas que ChatGPT puede hacer por vos hoy (aunque nunca lo hayas usado)"
+Tema: Usos simples de ChatGPT para personas comunes
+Por qué funciona: directo, práctico, fácil de guardar
+Contenido ya listo: posts_redes.md del 29 de abril
+
+VIERNES 16 — [R] REEL RÁPIDO (30 segundos)
+Hook: "¿Tardás 20 minutos escribiendo un mensaje? Mirá esto"
+Tema: Demostración en pantalla — prompt de WhatsApp en 10 segundos
+Por qué funciona: resultado visible, impacto inmediato
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SEMANA 2 — 19 al 25 de mayo
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LUNES 19 — [C] CARRUSEL MITOS
+Hook: "5 mentiras que te contaron sobre la inteligencia artificial"
+Tema: Mitos vs realidad para personas de 45+
+Ejemplo de slides:
+  - "Mito: necesitás saber inglés" → Realidad: funciona perfecto en español
+  - "Mito: es solo para jóvenes" → Realidad: funciona mejor si tenés experiencia de vida
+  - "Mito: te va a quitar el trabajo" → Realidad: te ayuda a hacer más en menos tiempo
+Por qué funciona: genera debate, muchos compartidos
+
+MIÉRCOLES 21 — [R] REEL MOTIVACIONAL
+Hook: "Nadie te enseñó esto en la escuela. Pero hoy podés aprenderlo en 5 minutos"
+Tema: Es normal no saber de IA si tenés más de 45 — y está bien empezar ahora
+Por qué funciona: conecta emocionalmente con la audiencia objetivo
+
+VIERNES 23 — [C] CARRUSEL TUTORIAL
+Hook: "Cómo hablarle a ChatGPT para que te entienda bien (paso a paso)"
+Tema: Cómo escribir buenos prompts sin saber nada de tecnología
+Contenido ya listo: adaptar del agente_trafico output
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SEMANA 3 — 26 al 31 de mayo
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LUNES 26 — [R] REEL DEMOSTRACIÓN
+Hook: "Le pedí a la IA que me prepare para una reunión con un cliente. Mirá lo que hizo"
+Tema: Grabación de pantalla — el prompt de reunión del guión
+Por qué funciona: muestra resultado real, no teoría
+
+MIÉRCOLES 28 — [C] CARRUSEL HERRAMIENTAS
+Hook: "Las 4 herramientas de IA que uso cada semana (todas gratis)"
+Tema: ChatGPT, Canva AI, CapCut, Suno — qué hace cada una
+Por qué funciona: útil, concreto, fácil de guardar
+
+VIERNES 30 — [R] REEL CIERRE DE MES
+Hook: "Un mes usando IA. Lo que aprendí."
+Tema: Reflexión personal — qué cambió en tu trabajo desde que usás IA
+Por qué funciona: auténtico, genera conversación en comentarios
+
+
+==========================================================
+RESUMEN DEL MES
+==========================================================
+
+Total publicaciones: 9
+Reels: 5
+Carruseles: 4
+Días de publicación: lunes, miércoles, viernes
+Horario recomendado: 19:00 - 21:00 Argentina
+
+TEMAS CUBIERTOS:
+✓ Presentación personal
+✓ Usos prácticos de ChatGPT
+✓ Mitos y realidades de la IA
+✓ Tutorial de prompts
+✓ Demostración en pantalla
+✓ Las 4 herramientas del curso
+✓ Reflexión y cierre
+
+==========================================================
+PARA GENERAR EL CONTENIDO DE CADA POST:
+Abrís la terminal → python agente_trafico.py "el tema del post"
+El agente te genera el texto listo para copiar y publicar.
+==========================================================

@@ -1,0 +1,35 @@
+[
+  {
+    "fecha": "2026-04-29T13:19:34.567100",
+    "tema": "cómo usar ChatGPT para escribir emails",
+    "carpeta": "output\\2026-04-29_como-usar-chatgpt-para-escribir-emails",
+    "archivos": [
+      "articulo.md",
+      "posts_redes.md",
+      "hilo_x.md",
+      "email.md"
+    ]
+  },
+  {
+    "fecha": "2026-04-30T12:34:14.086686",
+    "tema": "herramientas de IA para freelancers",
+    "carpeta": "output\\2026-04-30_herramientas-de-ia-para-freelancers",
+    "archivos": [
+      "articulo.md",
+      "posts_redes.md",
+      "hilo_x.md",
+      "email.md"
+    ]
+  },
+  {
+    "fecha": "2026-04-30T13:39:50.504889",
+    "tema": "herramientas de IA para freelancers",
+    "carpeta": "output\\2026-04-30_herramientas-de-ia-para-freelancers",
+    "archivos": [
+      "articulo.md",
+      "posts_redes.md",
+      "hilo_x.md",
+      "email.md"
+    ]
+  }
+]

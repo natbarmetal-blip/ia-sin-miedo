@@ -1,0 +1,220 @@
+GUIÓN — VIDEO GRABADO POR PANTALLA (screencast)
+"Cómo usar la IA si tenés más de 45 años y nunca la usaste"
+La IA Sin Miedo | @natalio.iasinmiedo
+==========================================================
+CÓMO FUNCIONA ESTE GUIÓN:
+- Vos hablás mientras se ve la pantalla
+- Entre [ ] están las instrucciones de lo que mostrás
+- El texto normal es lo que decís con tu voz
+==========================================================
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+INTRO (pantalla en negro o logo)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Pantalla: fondo negro con texto "La IA Sin Miedo"]
+
+"Si tenés más de 45 años y nunca usaste inteligencia artificial,
+este video es para vos.
+Te voy a mostrar, paso a paso, cómo funciona ChatGPT.
+Sin tecnicismos. Sin complicaciones.
+Directo en pantalla para que puedas hacerlo vos mismo."
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MOMENTO 1 — Entrar a ChatGPT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Abrís el navegador y vas a chatgpt.com]
+
+"Primero entramos a chatgpt.com
+Acá te va a pedir que crees una cuenta.
+La cuenta es gratis. Solo necesitás un email."
+
+[Mostrás la pantalla principal de ChatGPT con el cuadro para escribir]
+
+"Esto es todo. Una pantalla en blanco con un cuadro para escribir.
+Le hablás como si fuera una persona. En español. Normal.
+No hay que saber inglés ni nada especial."
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MOMENTO 1 — Primer mensaje
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Pegás el PROMPT 1 en ChatGPT y enviás]
+
+"Lo primero que hacemos es presentarnos.
+Miren lo que pasa cuando le digo quién soy."
+
+--- PEGÁS ESTE TEXTO ---
+Hola, soy Natalio. Tengo 55 años, soy herrero y dueño de mi propio
+taller. Nunca usé inteligencia artificial. ¿Por dónde empiezo?
+------------------------
+
+[Mostrás cómo ChatGPT escribe la respuesta]
+
+"¿Lo ven? Me responde como una persona.
+Me da la bienvenida, me explica para qué sirve,
+y me dice cómo empezar.
+Sin juzgarme. Sin apuro. Con paciencia.
+Como debería ser."
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MOMENTO 2 — El mensaje de WhatsApp
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Abrís una conversación nueva en ChatGPT]
+
+"Ahora el primer problema real.
+¿Cuántas veces tenés que escribirle a alguien
+y no sabés bien cómo decirlo sin sonar mal?
+Mirá esto."
+
+--- PEGÁS ESTE TEXTO ---
+Necesito escribirle a un cliente que me pidió un presupuesto hace
+3 días y no me respondió. No quiero parecer molesto pero quiero
+saber si le interesa. ¿Me escribís el mensaje para WhatsApp?
+Corto, amable y directo.
+------------------------
+
+[Mostrás la respuesta]
+
+"En 10 segundos. Un mensaje listo para copiar y mandar.
+Profesional, amable, que no molesta.
+Eso que a nosotros nos llevaría 20 minutos pensar,
+la IA lo hace en segundos."
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MOMENTO 3 — Preparar una reunión
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Nuevo mensaje en ChatGPT]
+
+"Siguiente ejemplo.
+¿Alguna vez fueron a una reunión con un cliente nuevo
+y en el momento no supieron qué preguntar?
+La IA te prepara antes de entrar."
+
+--- PEGÁS ESTE TEXTO ---
+Mañana tengo una reunión con un cliente nuevo que quiere comprar
+maquinaria para su taller. Nunca lo conocí. ¿Qué preguntas le hago
+para entender bien lo que necesita y no quedarme sin saber qué decir?
+------------------------
+
+[Mostrás la respuesta]
+
+"Te da la lista completa.
+La leés antes de entrar y llegás preparado.
+La IA no va a la reunión por vos.
+Te prepara para que vos vayas mejor."
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MOMENTO 4 — Explicar el valor de tu trabajo
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Nuevo mensaje en ChatGPT]
+
+"Este ejemplo es para los que tienen su propio negocio
+y les cuesta explicar por qué cobran lo que cobran."
+
+--- PEGÁS ESTE TEXTO ---
+Tengo un taller de herrería y fabricamos portones, rejas y estructuras
+metálicas a medida. Necesito explicarles a clientes que no saben nada
+del rubro por qué mis precios son más caros que los del mercado pero
+mi trabajo dura el doble. ¿Me ayudás a explicarlo de forma simple
+y convincente?
+------------------------
+
+[Mostrás la respuesta]
+
+"Miren eso. Te da los argumentos, con palabras simples,
+para que el cliente entienda el valor real de lo que hacés.
+Sin que suene a vendedor. Sin que suene a defensa.
+Natural, convincente, claro."
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MOMENTO 5 — El truco más poderoso
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Nuevo mensaje en ChatGPT]
+
+"Ahora les muestro el truco que cambia todo.
+El que nadie te enseña.
+Se llama el asistente personalizado.
+En vez de explicarte quién sos cada vez,
+se lo decís una sola vez y listo."
+
+--- PEGÁS ESTE TEXTO ---
+De ahora en adelante sos mi asistente personal. Me llamo Natalio,
+tengo 55 años, soy dueño de un taller de herrería en Argentina.
+Mis clientes son principalmente empresas constructoras y particulares
+que quieren trabajo de calidad. Mi mayor problema es que pierdo tiempo
+escribiendo mensajes y presupuestos. Cada vez que te pida algo,
+acordate de esto y ayudame como si me conocieras de hace años.
+¿Entendiste?
+------------------------
+
+[Mostrás la respuesta de ChatGPT]
+
+"Confirmó. Ahora te conoce.
+Ahora todo lo que le pedís viene ajustado a vos,
+a tu negocio, a tu forma de hablar.
+Miren la diferencia con el siguiente pedido."
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+MOMENTO 6 — Resultado del asistente personalizado
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Continuás en la misma conversación — NO abrís una nueva]
+
+"Ahora le pido algo concreto. Sin explicar nada más.
+Ya me conoce."
+
+--- PEGÁS ESTE TEXTO ---
+Escribime un presupuesto para una reja de ventana de 1.20 x 90 cm,
+hierro cuadrado, pintura anticorrosión. El cliente es una familia
+en zona residencial. Precio: $85.000 pesos. Tono formal pero amable.
+------------------------
+
+[Mostrás la respuesta]
+
+"¿Lo ven? Un presupuesto completo, profesional,
+listo para copiar y mandar.
+En 10 segundos.
+
+Eso es tener la IA como tu mejor empleado.
+Hace en minutos lo que vos tardás horas.
+Sin quejarse. Sin errores. Sin días libres."
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CIERRE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[Pantalla con logo o fondo simple]
+
+"Si llegaste hasta acá, ya sabés más de inteligencia artificial
+que la mayoría de las personas.
+
+Empezás hoy. Entrás a chatgpt.com, te presentás como te mostré,
+y le pedís algo que necesités ahora mismo.
+
+Si querés aprender más, suscribite al canal.
+Cada semana un video nuevo, simple, sin tecnicismos.
+
+Y si querés aprender todo de una vez,
+tengo una guía completa. El link está en la descripción."
+
+[TEXTO EN PANTALLA FINAL:
+"Suscribite al canal"
+"Guía completa → link en la descripción"
+"@natalio.iasinmiedo"]
+
+==========================================================

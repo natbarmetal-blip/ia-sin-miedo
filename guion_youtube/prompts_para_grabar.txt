@@ -1,0 +1,65 @@
+PROMPTS PARA GRABAR — VIDEO YOUTUBE
+"ChatGPT para emprendedores: Guía completa 2025"
+La IA Sin Miedo
+================================================
+INSTRUCCIONES: Durante la grabación, copiá cada prompt
+con Ctrl+C y pegalo en ChatGPT con Ctrl+V.
+================================================
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PROMPT MAL (para mostrar el error común)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+escribime un email para un cliente
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PROMPT BIEN (para mostrar la diferencia)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Soy consultor de marketing. Mi cliente lleva 3 meses sin responderme. Necesito un email directo pero cordial para retomar contacto. Máximo 100 palabras, tono profesional pero cercano.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PROMPT 1 — Para responder clientes difíciles
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Soy consultor de negocios. Un cliente me escribió esto: "Hola, estuve pensando y creo que tu precio es muy alto para lo que ofrecés. ¿Podés hacer algo con el precio?". Necesito una respuesta profesional que defienda mi valor sin perder al cliente. Tono: confiado pero cordial. Máximo 80 palabras.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PROMPT 2 — Para escribir propuestas
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Escribime una propuesta para una dueña de tienda de ropa online que necesita mejorar su presencia en redes sociales. Mi servicio incluye gestión de Instagram y creación de contenido. Mi precio es 300 dólares al mes. Destacá que con esto va a ahorrar tiempo y conseguir más clientes sin tener que aprender marketing. Tono: confiado pero no agresivo. Máximo 200 palabras.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PROMPT 3 — Para crear contenido para redes
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Soy creador de contenido sobre inteligencia artificial que ayuda a emprendedores y freelancers a usar IA sin complicaciones. Escribime 3 ideas de posts para Instagram sobre cómo usar ChatGPT para ahorrar tiempo en el negocio. Cada una con hook que detenga el scroll, cuerpo de 3 puntos prácticos y CTA. Tono: cálido, práctico, sin tecnicismos.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PROMPT 4 — Para responder preguntas frecuentes
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Soy consultor de negocios. Mis clientes siempre me preguntan: "¿Cuánto tiempo tarda en verse resultados con tu servicio?". Escribime una respuesta clara, completa y que genere confianza. Que no suene a robot ni a respuesta de manual. Tono cercano y honesto.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PROMPT 5 — El asistente personalizado (el más poderoso)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+De ahora en adelante sos mi asistente de negocios. Me llamo Natalio, soy creador de contenido sobre inteligencia artificial, trabajo con emprendedores y freelancers hispanohablantes que quieren usar IA sin complicaciones ni tecnicismos. Mi tono es cálido, práctico y directo, como un amigo que sabe mucho y te lo explica tomando un café. Cada vez que te pida algo, usá este contexto para responderme. ¿Entendiste?
+
+
+================================================
+RECORDATORIO ANTES DE GRABAR:
+- Probá cada prompt en ChatGPT y guardá las respuestas
+- Abrí este archivo al lado de ChatGPT durante la grabación
+- Copiá con Ctrl+C, pegá con Ctrl+V
+- Si algo sale mal, pausá la grabación y volvé a intentar
+================================================
