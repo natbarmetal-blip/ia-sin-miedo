@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generador de Post Rápido — IA Sin Miedo</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --dark: #0a0a12;
+    --dark2: #12121e;
+    --dark3: #1a1a2e;
+    --accent: #FF6B6B;
+    --accent2: #FFB347;
+    --teal: #4ECDC4;
+    --purple: #A78BFA;
+    --white: #f8f6f2;
+    --muted: #8892a4;
+    --card: rgba(255,255,255,0.04);
+    --border: rgba(255,255,255,0.08);
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--dark);
+    color: var(--white);
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  @keyframes fadeUp { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:translateY(0); } }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  nav {
+    position: fixed; top: 0; width: 100%; z-index: 100;
+    padding: 18px 40px;
+    background: rgba(10,10,18,0.9);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px; font-weight: 900;
+    color: var(--white); text-decoration: none;
+    letter-spacing: -0.5px;
+  }
+  .logo span { color: var(--accent); }
+  .nav-back { color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.2s; }
+  .nav-back:hover { color: var(--white); }
+
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 110px 24px 80px;
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeUp 0.7s ease forwards;
+  }
+  .page-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+  .page-header h1 span { color: var(--accent2); }
+  .page-header p { color: var(--muted); font-size: 15px; }
+
+  .badge {
+    display: inline-block;
+    background: rgba(255,179,71,0.15);
+    border: 1px solid rgba(255,179,71,0.3);
+    color: var(--accent2);
+    border-radius: 50px;
+    padding: 4px 14px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: 0.5px;
+  }
+
+  .input-section {
+    background: var(--dark2);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 28px;
+    margin-bottom: 32px;
+    animation: fadeUp 0.7s ease 0.1s both;
+  }
+
+  .input-section label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    background: var(--dark3);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--white);
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    padding: 14px 16px;
+    outline: none;
+    transition: border-color 0.2s;
+    margin-bottom: 20px;
+  }
+  input[type="text"]:focus { border-color: var(--accent2); }
+  input[type="text"]::placeholder { color: var(--muted); }
+
+  .tipos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .tipo-btn {
+    padding: 14px;
+    background: var(--dark3);
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    color: var(--muted);
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+  }
+  .tipo-btn:hover { border-color: var(--accent2); color: var(--accent2); }
+  .tipo-btn.selected {
+    border-color: var(--accent2);
+    background: rgba(255,179,71,0.1);
+    color: var(--accent2);
+  }
+  .tipo-btn .tipo-emoji { font-size: 20px; display: block; margin-bottom: 4px; }
+
+  .btn-generar {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s;
+  }
+  .btn-generar:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(255,107,107,0.3);
+  }
+  .btn-generar:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+
+  .spinner {
+    display: inline-block;
+    width: 16px; height: 16px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  .error-msg {
+    background: rgba(255,107,107,0.1);
+    border: 1px solid rgba(255,107,107,0.3);
+    border-radius: 12px;
+    padding: 14px 18px;
+    color: var(--accent);
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
+  /* RESULTADO */
+  .resultado {
+    animation: fadeUp 0.5s ease forwards;
+  }
+
+  .preview-card {
+    background: var(--dark2);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .preview-header {
+    background: linear-gradient(135deg, #1a1a2e, #12121e);
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* CANVAS PREVIEW */
+  .canvas-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    background: #0d0d1a;
+  }
+
+  canvas {
+    border-radius: 12px;
+    max-width: 100%;
+  }
+
+  /* SECCIONES DE TEXTO */
+  .text-section {
+    background: var(--dark2);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+
+  .text-section-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  .text-content {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--white);
+    white-space: pre-wrap;
+  }
+
+  .hashtags { color: var(--teal); font-size: 14px; }
+
+  .instruccion-box {
+    background: rgba(78,205,196,0.07);
+    border: 1px solid rgba(78,205,196,0.2);
+    border-radius: 12px;
+    padding: 16px;
+    font-size: 14px;
+    color: #d4d8e0;
+    line-height: 1.7;
+  }
+
+  .btn-copiar {
+    display: inline-flex; align-items: center; gap: 6px;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    color: var(--muted);
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn-copiar:hover { border-color: var(--teal); color: var(--teal); }
+
+  .btn-descargar {
+    width: 100%;
+    padding: 14px;
+    background: var(--dark3);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--white);
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 12px;
+  }
+  .btn-descargar:hover { border-color: var(--accent2); color: var(--accent2); }
+
+  .btn-nuevo {
+    width: 100%;
+    padding: 14px;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--muted);
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn-nuevo:hover { border-color: var(--accent); color: var(--accent); }
+
+  @media (max-width: 600px) {
+    nav { padding: 16px 20px; }
+    main { padding: 95px 16px 60px; }
+    .tipos-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">IA Sin <span>Miedo</span></a>
+  <a href="index.html" class="nav-back">← Volver</a>
+</nav>
+
+<main>
+  <div class="page-header">
+    <div class="badge">⚡ Listo en 5 minutos</div>
+    <h1>Post <span>Rápido</span> para Instagram</h1>
+    <p>Una imagen poderosa con caption y hashtags listos para publicar.</p>
+  </div>
+
+  <div class="input-section">
+    <label>¿Sobre qué tema?</label>
+    <input type="text" id="topic" placeholder="Ej: el miedo a la tecnología, ChatGPT para mayores, ahorrar tiempo con IA...">
+
+    <label>Tipo de post</label>
+    <div class="tipos-grid">
+      <button class="tipo-btn selected" data-tipo="frase" onclick="seleccionarTipo(this)">
+        <span class="tipo-emoji">💬</span>
+        Frase impactante
+      </button>
+      <button class="tipo-btn" data-tipo="tip" onclick="seleccionarTipo(this)">
+        <span class="tipo-emoji">💡</span>
+        Tip práctico
+      </button>
+      <button class="tipo-btn" data-tipo="pregunta" onclick="seleccionarTipo(this)">
+        <span class="tipo-emoji">❓</span>
+        Pregunta al público
+      </button>
+      <button class="tipo-btn" data-tipo="dato" onclick="seleccionarTipo(this)">
+        <span class="tipo-emoji">📊</span>
+        Dato sorprendente
+      </button>
+    </div>
+
+    <div id="error" class="error-msg" style="display:none"></div>
+    <button class="btn-generar" id="btn-generar" onclick="generarPost()">
+      ⚡ Generar Post Rápido
+    </button>
+  </div>
+
+  <div id="resultado" style="display:none" class="resultado"></div>
+</main>
+
+<script>
+  let tipoSeleccionado = 'frase';
+  let canvasRef = null;
+
+  function seleccionarTipo(btn) {
+    document.querySelectorAll('.tipo-btn').forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+    tipoSeleccionado = btn.dataset.tipo;
+  }
+
+  async function generarPost() {
+    const topic = document.getElementById('topic').value.trim();
+    const errorEl = document.getElementById('error');
+    errorEl.style.display = 'none';
+
+    if (!topic) {
+      errorEl.textContent = 'Por favor escribí el tema del post.';
+      errorEl.style.display = 'block';
+      return;
+    }
+
+    const btn = document.getElementById('btn-generar');
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spinner"></span> Generando...';
+    document.getElementById('resultado').style.display = 'none';
+
+    try {
+      const res = await fetch('/.netlify/functions/post-ligero', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ topic, tipo: tipoSeleccionado }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Error desconocido');
+
+      mostrarResultado(data, topic);
+
+    } catch (err) {
+      errorEl.textContent = 'Error: ' + err.message;
+      errorEl.style.display = 'block';
+    } finally {
+      btn.disabled = false;
+      btn.innerHTML = '⚡ Generar Post Rápido';
+    }
+  }
+
+  function mostrarResultado(data, topic) {
+    const canvas = dibujarCanvas(data);
+    canvasRef = canvas;
+
+    const html = `
+      <div class="preview-card">
+        <div class="preview-header">Vista previa de la imagen</div>
+        <div class="canvas-wrapper">${canvas.outerHTML}</div>
+      </div>
+
+      <div class="text-section">
+        <div class="text-section-label">📝 Caption para Instagram / Facebook</div>
+        <div class="text-content">${data.caption}</div>
+        <button class="btn-copiar" onclick="copiar(this, '${escapar(data.caption)}')">📋 Copiar caption</button>
+      </div>
+
+      <div class="text-section">
+        <div class="text-section-label">🏷️ Hashtags</div>
+        <div class="text-content hashtags">${data.hashtags}</div>
+        <button class="btn-copiar" onclick="copiar(this, '${escapar(data.hashtags)}')">📋 Copiar hashtags</button>
+      </div>
+
+      <div class="text-section">
+        <div class="text-section-label">🎨 Cómo armarlo en Canva</div>
+        <div class="instruccion-box">${data.instruccion_canva}</div>
+      </div>
+
+      <button class="btn-descargar" onclick="descargarImagen()">⬇️ Descargar imagen</button>
+      <button class="btn-nuevo" onclick="nuevoPost()">+ Generar otro post</button>
+    `;
+
+    const resultadoEl = document.getElementById('resultado');
+    resultadoEl.innerHTML = html;
+    resultadoEl.style.display = 'block';
+    canvasRef = resultadoEl.querySelector('canvas');
+    resultadoEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function dibujarCanvas(data) {
+    const canvas = document.createElement('canvas');
+    canvas.width = 1080;
+    canvas.height = 1080;
+    canvas.style.width = '320px';
+    canvas.style.height = '320px';
+    const ctx = canvas.getContext('2d');
+
+    // Fondo naranja (color del proyecto)
+    const gradient = ctx.createLinearGradient(0, 0, 1080, 1080);
+    gradient.addColorStop(0, '#FF6B35');
+    gradient.addColorStop(1, '#FFB347');
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, 1080, 1080);
+
+    // Emoji grande
+    ctx.font = '120px serif';
+    ctx.textAlign = 'center';
+    ctx.fillText(data.emoji || '💡', 540, 280);
+
+    // Texto principal
+    ctx.fillStyle = '#ffffff';
+    ctx.font = 'bold 80px Arial, sans-serif';
+    ctx.textAlign = 'center';
+    const lineas = wrapText(ctx, data.texto_principal, 900, 80);
+    const totalAltura = lineas.length * 100;
+    const startY = 540 - totalAltura / 2 + 50;
+    lineas.forEach((linea, i) => {
+      ctx.fillText(linea, 540, startY + i * 100);
+    });
+
+    // Subtexto
+    if (data.subtexto) {
+      ctx.fillStyle = 'rgba(255,255,255,0.8)';
+      ctx.font = '44px Arial, sans-serif';
+      ctx.fillText(data.subtexto, 540, startY + totalAltura + 60);
+    }
+
+    // Handle
+    ctx.fillStyle = 'rgba(255,255,255,0.7)';
+    ctx.font = 'bold 36px Arial, sans-serif';
+    ctx.fillText('@natalio.iasinmiedo', 540, 1020);
+
+    return canvas;
+  }
+
+  function wrapText(ctx, text, maxWidth, fontSize) {
+    const words = text.split(' ');
+    const lines = [];
+    let current = '';
+    for (const word of words) {
+      const test = current ? current + ' ' + word : word;
+      if (ctx.measureText(test).width > maxWidth && current) {
+        lines.push(current);
+        current = word;
+      } else {
+        current = test;
+      }
+    }
+    if (current) lines.push(current);
+    return lines;
+  }
+
+  function escapar(str) {
+    return str.replace(/'/g, "\\'").replace(/\n/g, '\\n');
+  }
+
+  function copiar(btn, texto) {
+    const textoReal = texto.replace(/\\n/g, '\n');
+    navigator.clipboard.writeText(textoReal).then(() => {
+      const original = btn.innerHTML;
+      btn.innerHTML = '✅ Copiado';
+      setTimeout(() => btn.innerHTML = original, 2000);
+    });
+  }
+
+  function descargarImagen() {
+    if (!canvasRef) return;
+    const link = document.createElement('a');
+    link.download = 'post-ia-sin-miedo.png';
+    link.href = canvasRef.toDataURL('image/png');
+    link.click();
+  }
+
+  function nuevoPost() {
+    document.getElementById('resultado').style.display = 'none';
+    document.getElementById('topic').value = '';
+    document.getElementById('topic').focus();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
