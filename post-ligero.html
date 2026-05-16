@@ -410,13 +410,14 @@
   }
 
   function mostrarResultado(data, topic) {
-    const canvas = dibujarCanvas(data);
-    canvasRef = canvas;
+    const resultadoEl = document.getElementById('resultado');
 
     const html = `
       <div class="preview-card">
-        <div class="preview-header">Vista previa de la imagen</div>
-        <div class="canvas-wrapper">${canvas.outerHTML}</div>
+        <div class="preview-header">✅ Imagen lista para descargar</div>
+        <div class="canvas-wrapper">
+          <canvas id="post-canvas" width="1080" height="1080" style="width:320px;height:320px;border-radius:12px;"></canvas>
+        </div>
       </div>
 
       <div class="text-section">
@@ -431,28 +432,20 @@
         <button class="btn-copiar" onclick="copiar(this, '${escapar(data.hashtags)}')">📋 Copiar hashtags</button>
       </div>
 
-      <div class="text-section">
-        <div class="text-section-label">🎨 Cómo armarlo en Canva</div>
-        <div class="instruccion-box">${data.instruccion_canva}</div>
-      </div>
-
-      <button class="btn-descargar" onclick="descargarImagen()">⬇️ Descargar imagen</button>
+      <button class="btn-descargar" onclick="descargarImagen()">⬇️ Descargar imagen (1080x1080px)</button>
       <button class="btn-nuevo" onclick="nuevoPost()">+ Generar otro post</button>
     `;
 
-    const resultadoEl = document.getElementById('resultado');
     resultadoEl.innerHTML = html;
     resultadoEl.style.display = 'block';
-    canvasRef = resultadoEl.querySelector('canvas');
+
+    canvasRef = document.getElementById('post-canvas');
+    dibujarCanvas(data, canvasRef);
+
     resultadoEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
-  function dibujarCanvas(data) {
-    const canvas = document.createElement('canvas');
-    canvas.width = 1080;
-    canvas.height = 1080;
-    canvas.style.width = '320px';
-    canvas.style.height = '320px';
+  function dibujarCanvas(data, canvas) {
     const ctx = canvas.getContext('2d');
 
     // Fondo naranja (color del proyecto)
@@ -489,8 +482,6 @@
     ctx.fillStyle = 'rgba(255,255,255,0.7)';
     ctx.font = 'bold 36px Arial, sans-serif';
     ctx.fillText('@natalio.iasinmiedo', 540, 1020);
-
-    return canvas;
   }
 
   function wrapText(ctx, text, maxWidth, fontSize) {
