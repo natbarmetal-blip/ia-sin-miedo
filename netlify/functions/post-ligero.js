@@ -73,9 +73,9 @@ RESPONDE ÚNICAMENTE con un JSON válido sin markdown (solo el JSON):
   "texto_principal": "El texto grande que va en el centro de la imagen",
   "subtexto": "Una frase pequeña complementaria (opcional, puede ser vacío)",
   "emoji": "Un solo emoji representativo",
-  "caption": "El texto para pegar en Instagram/Facebook (2-3 párrafos cortos + CTA para seguir @natalio.iasinmiedo)",
-  "hashtags": "#IAsinmiedo #InteligenciaArtificial #ChatGPT #MayoresDe45 #EmprendedoresLatinos",
-  "instruccion_canva": "Instrucción simple de cómo armar esto en Canva en 5 minutos"
+  "caption": "El texto para pegar en Instagram/Facebook (2-3 párrafos cortos + CTA para seguir @natalio.iasinmiedo). Para Instagram termina con: Seguime 👉 @natalio.iasinmiedo. Para Facebook termina con: Probá gratis aquí 👉 moonlit-conkies-656152.netlify.app",
+  "caption_facebook": "Igual que caption pero siempre termina con: Probá gratis aquí 👉 moonlit-conkies-656152.netlify.app",
+  "hashtags": "#IAsinmiedo #InteligenciaArtificial #ChatGPT #MayoresDe45 #EmprendedoresLatinos"
 }`;
 
     const response = await fetch("https://api.anthropic.com/v1/messages", {

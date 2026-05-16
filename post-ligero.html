@@ -421,9 +421,15 @@
       </div>
 
       <div class="text-section">
-        <div class="text-section-label">📝 Caption para Instagram / Facebook</div>
+        <div class="text-section-label">📸 Caption para Instagram</div>
         <div class="text-content">${data.caption}</div>
-        <button class="btn-copiar" onclick="copiar(this, '${escapar(data.caption)}')">📋 Copiar caption</button>
+        <button class="btn-copiar" onclick="copiar(this, '${escapar(data.caption)}')">📋 Copiar para Instagram</button>
+      </div>
+
+      <div class="text-section">
+        <div class="text-section-label">👥 Caption para Facebook (con link)</div>
+        <div class="text-content">${data.caption_facebook || data.caption}</div>
+        <button class="btn-copiar" onclick="copiar(this, '${escapar(data.caption_facebook || data.caption)}')">📋 Copiar para Facebook</button>
       </div>
 
       <div class="text-section">
