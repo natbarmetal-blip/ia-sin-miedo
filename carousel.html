@@ -397,6 +397,8 @@
     .tips-bar { grid-template-columns: 1fr; }
   }
 </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 </head>
 <body>
 
@@ -852,26 +854,25 @@ function downloadCurrent() {
 async function downloadAll() {
   const canvas = document.getElementById('slideCanvas');
   const saved = currentSlide;
+  const zip = new JSZip();
 
-  // We'll collect all as individual downloads
   for (let i = 0; i < slides.length; i++) {
     currentSlide = i;
     renderDots();
     renderSlide();
-    
-    await new Promise(resolve => setTimeout(resolve, 100));
-    
-    const link = document.createElement('a');
-    link.download = `carrusel-slide-${i + 1}.png`;
-    link.href = canvas.toDataURL('image/png');
-    link.click();
-    
-    await new Promise(resolve => setTimeout(resolve, 300));
+    await new Promise(resolve => setTimeout(resolve, 150));
+
+    const dataUrl = canvas.toDataURL('image/png');
+    const base64 = dataUrl.split(',')[1];
+    zip.file(`carrusel-slide-${i + 1}.png`, base64, { base64: true });
   }
 
   currentSlide = saved;
   renderDots();
   renderSlide();
+
+  const blob = await zip.generateAsync({ type: 'blob' });
+  saveAs(blob, 'carrusel-ia-sin-miedo.zip');
 }
 
 // Email tips form handler
